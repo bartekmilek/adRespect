@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: $font-theme-text;
+  color: $theme-black;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-theme-header;
+}
+
+p {
+  font-family: $font-theme-text;
+  color: $theme-black;
+  margin: 0;
+}
+
+a {
+  font-family: $font-theme-text;
+}
+
+ul {
+  padding: 0;
+}
+
+.subheader {
+  font-family: $font-theme-text;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.12px;
+  margin-bottom: 16px;
+}
+
+.header-span {
+  font-family: $font-theme-text;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 115%;
+  font-size: 32px;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 48px;
+  }
+}
+
+.df {
+  display: flex;
+}
+
+.break-line {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: grid;
+    width: 1px;
+    height: 1px;
+  }
+}
+
+.gap {
+  @media screen and (min-width: 1200px) {
+    gap:40px;
+  }
+}
+

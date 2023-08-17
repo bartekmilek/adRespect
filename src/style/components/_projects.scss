@@ -1,0 +1,155 @@
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 120px 0px 44px 0px;
+    gap: 96px;
+    background-color: $theme-beige;
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    @media screen and (min-width: 480px){
+        padding: 60px 0px 44px 0px;
+        gap: 36px;
+    }
+
+    @media screen and (min-width: 1024px){
+        padding: 80px 0px 44px 0px;
+        gap: 36px;
+    }
+
+    @media screen and (min-width: 1200px){
+        padding: 120px 0px 44px 0px;
+        gap: 96px;
+    }
+
+
+    .projects-header{
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 115%;
+        letter-spacing: -0.44px;
+        margin-bottom: 32px;
+
+        @media screen and (min-width: 1024px){
+            font-size: 40px;
+            letter-spacing: -1.44px;
+            margin-bottom: 60px;
+        }
+
+        @media screen and (min-width: 1200px){
+            font-size: 48px;
+            letter-spacing: -1.44px;
+            margin-bottom: 0;
+        }
+    }
+
+    .grid{
+        min-height: 100vh;
+        height: auto;
+        width: 100vw;
+        position: relative;
+        overflow: hidden;
+
+        .grid-overlay{
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 50%;
+            background: linear-gradient(360deg, #DCC1AB 0%, rgba(214, 183, 158, 0.00) 100%);
+            z-index: 2;
+        }
+
+        .grid-item{
+
+            margin-bottom: 20px;
+
+            @media screen and (min-width: 480px){
+                width: 100%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            @media screen and (min-width: 1024px){
+                width: 100%;
+                max-width: 450px;
+                height: auto;
+                max-height: 600px;
+                margin-bottom: 42px;
+            }
+
+            .img-horizontal{
+                width: 451px;
+                height: 338px;
+            }
+
+            .img-vertical{
+                width: 451px;
+                height: 601px;
+                flex-shrink: 0;
+            }
+
+            .img-rect{
+                width: 451px;
+                height: 451px;
+            }
+
+            .grid-img{
+                @media screen and (min-width: 480px){
+                    width: 80%;
+                    height: auto;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+        
+    }
+
+    .projects-button{
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: inline-flex;
+        align-items: center;
+        padding: 12px 22px 14px 22px;
+        gap: 8px;
+        background-color: transparent;
+        color: $theme-black;
+        z-index: 3;
+        border: 1px solid $theme-black;
+        border-radius: 200px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+        transition: $transition-all;
+
+        span{
+            font-weight: 300;
+        }
+
+        &:hover{
+            background-color: $theme-black;
+            color: $theme-gray;
+        }
+
+    }
+
+    .hidden{
+        display: none!important;
+    }
+
+    .gutter-sizer{
+        width: 5px;
+
+
+        @media screen and (min-width: 1400px){
+            width: 45px;
+        }
+    }   
+}

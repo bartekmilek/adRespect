@@ -1,0 +1,223 @@
+footer{
+    background-color: $theme-black;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @media screen and (min-width: 1200px){
+       padding: 80px 124px;
+     }
+
+    .footer-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .footer-header-wrapper{
+            margin-bottom: 40px;
+
+            @media screen and (min-width: 768px){
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            @media screen and (min-width: 1200px){
+                margin-bottom: 62px;
+            }
+
+
+            .footer-header-text-wrapper{
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+                gap: 16px;
+                
+                @media screen and (min-width: 768px){
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin-top: 0;
+                }
+
+                @media screen and (min-width: 1024px){
+                    gap: 24px;
+                }
+
+                .footer-header-text{
+                    color: $theme-gray;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 150%;
+                    letter-spacing: -0.16px;
+
+                    @media screen and (min-width: 1024px){
+                        font-size: 16px;
+                    }
+                }
+                .footer-header-button{
+                    color: $theme-gray;
+                    background-color: $theme-green;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 12px 24px 14px 24px;
+                    gap: 10px;
+                    border: 1px solid $theme-green;
+                    border-radius: 200px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 150%;
+                    transition: $transition-all;
+
+                    @media screen and (min-width: 1024px){
+                        font-size: 16px;
+                    }
+        
+                    &:hover{
+                        color: $theme-gray;
+                        background-color: $theme-black;
+                        border-color: $theme-gray;
+                    }
+        
+                    span{
+                        font-weight: 300;
+                    }
+            }
+
+                
+            }
+        }
+
+        .footer-divider{
+            margin-bottom: 40px;
+            height: 1px;
+            width: 100%;
+            background-color: $theme-gray;
+
+            @media screen and (min-width: 1200px){
+               margin-bottom: 62px;
+            }
+
+            
+        }
+
+        .footer-info-wrapper{
+            display: flex;
+            flex-direction: column;
+
+            @media screen and (min-width: 480px){
+                flex-direction: row;
+                width: 100%;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+
+            .footer-links-wrapper{
+
+
+                .footer-links{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+
+                    @media screen and (min-width: 1200px){
+                        flex-direction: row;
+                        gap: 48px;
+                    }
+                }
+            }
+
+            .footer-contact-wrapper{
+                margin-top: 20px;
+
+                @media screen and (min-width: 480px){
+                    margin: 0;
+                }
+
+                .footer-contact-links{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+
+                    @media screen and (min-width: 1200px){
+                        flex-direction: row;
+                        gap: 48px;
+                    }
+                }
+            }
+
+            .footer-link{
+                color: $theme-gray;
+                text-decoration: none;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 150%;
+                letter-spacing: -0.14px;
+                transition: $transition-all;
+
+                @media screen and (min-width: 1024px){
+                    font-size: 14px;
+                }
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .footer-copyright-wrapper{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 20px;
+
+            @media screen and (min-width: 480px){
+                flex-direction: row;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 20px;
+            }
+
+            @media screen and (min-width: 1200px){
+                margin-top: 120px;
+            }
+
+            .footer-copyright-text{
+                color: $theme-gray;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 150%;
+                letter-spacing: -0.16px;
+
+                @media screen and (min-width: 1024px){
+                    font-size: 16px;
+                }
+            }
+
+            .footer-author-info{
+                display: flex;
+                align-items: center;
+                gap: 12px;
+
+                @media screen and (min-width: 1024px){
+                    gap: 16px;
+                }
+                
+
+                .footer-author-info-text{
+                    color: $theme-gray;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 150%;
+                    letter-spacing: -0.16px;
+
+                    @media screen and (min-width: 1024px){
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

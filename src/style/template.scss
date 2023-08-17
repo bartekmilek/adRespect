@@ -1,0 +1,44 @@
+// ################### ABSTRACTS ################### 
+
+// variables
+@import "abstracts/variables";
+
+
+// ################### VENDOR ################### 
+
+// bootstrap 5.1.3
+// @import "vendor/bootstrap_v5.1.3/bootstrap";
+
+
+// ################### BASE ################### 
+
+// fonts
+@import "base/typography";
+
+
+// ################### COMPONENTS ################### 
+
+// main
+@import "components/main";
+//nav
+@import "components/nav";
+
+//header
+@import "components/header";
+
+//offer
+@import "components/offer";
+
+//about
+@import "components/about";
+
+//insta
+@import "components/projects";
+
+
+//insta
+@import "components/insta";
+
+//footer
+@import "components/footer";
+

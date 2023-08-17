@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giard Design strona główna</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <link href="template/css/lightbox.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="template/css/animate.css">
+
+    <script src="template/js/wow.min.js"></script>
+
+    <link rel="stylesheet" href="template/css/template.min.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo-link">
+          <img src="template/img/logo.svg" alt="Giard Design logo" />
+        </a>
+        <div class="nav-icons">
+          <ul class="menu">
+            <li class="menu-item big-menu-item">
+              <a href="#" class="has-children menu-link menu-link-chevron"
+                >Oferta
+                <span class="chevron">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M2.19988 4.81427C2.02631 4.6407 2.02631 4.3593 2.19988 4.18573C2.35766 4.02794 2.60458 4.0136 2.77857 4.1427L2.82842 4.18573L6.0697 7.42681L9.31099 4.18573C9.46878 4.02794 9.71569 4.0136 9.88968 4.1427L9.93953 4.18573C10.0973 4.34352 10.1117 4.59043 9.98256 4.76442L9.93953 4.81427L6.38397 8.36983C6.22618 8.52761 5.97927 8.54196 5.80528 8.41286L5.75543 8.36983L2.19988 4.81427Z"
+                      fill="#111111"
+                    />
+                  </svg>
+                </span>
+              </a>
+              <ul class="sub-menu">
+                <li><a href="#" class="sub-menu-item">Strona pierwsza</a></li>
+                <li><a href="#" class="sub-menu-item">Strona druga</a></li>
+                <li><a href="#" class="sub-menu-item sub-menu-item-last">Strona trzecia</a></li>
+            </ul>
+            </li>
+            <li class="menu-item">
+              <a href="#about" class="menu-link">O firmie</a>
+            </li>
+            <li class="menu-item">
+              <a href="#projects" class="menu-link">Realizacje</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Kontakt</a>
+            </li>
+          </ul>
+          <button class="search-button search-toggle">
+            <img src="template/img/search.svg" alt="szukaj" />
+          </button>
+          <div class="search-drawer">
+            <div class="search-container">
+              <span class="material-symbols-outlined search-close">
+                close
+              </span>
+              <h3 class="search-header">Czego potrzebujesz?</h3>
+              <div class="block block-search">
+                <div class="block block-content">
+                  <form class="form minisearch" id="header-search">
+                    <div class="search-field-wrapper">
+                      <div class="search-field">
+                        <div class="input-box">
+                          <input
+                            id="search"
+                            type="text"
+                            name="q"
+                            value=""
+                            placeholder="Wpisz wyszukiwaną frazę"
+                            class="input-text"
+                          />
+                          <button
+                            class="search-button search-button-gray"
+                            type="submit"
+                            title="Search"
+                            disabled=""
+                          >
+                            <img src="template/img/search.svg" alt="szukaj" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="burger"
+            onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+            aria-label="Main Menu"
+          >
+            <span class="material-symbols-outlined menu-icon"> menu </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-menu-wrapper">
+        <ul class="mobile-menu">
+          <li class="mobile-menu-item has-children">
+            <a href="#" class="menu-link menu-link-chevron"
+              >Oferta
+              <span class="chevron">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M2.19988 4.81427C2.02631 4.6407 2.02631 4.3593 2.19988 4.18573C2.35766 4.02794 2.60458 4.0136 2.77857 4.1427L2.82842 4.18573L6.0697 7.42681L9.31099 4.18573C9.46878 4.02794 9.71569 4.0136 9.88968 4.1427L9.93953 4.18573C10.0973 4.34352 10.1117 4.59043 9.98256 4.76442L9.93953 4.81427L6.38397 8.36983C6.22618 8.52761 5.97927 8.54196 5.80528 8.41286L5.75543 8.36983L2.19988 4.81427Z"
+                    fill="#111111"
+                  />
+                </svg>
+              </span>
+            </a>
+            <ul class="sub-menu">
+              <li class="sub-menu-item">
+                <a href="#" class="sub-menu-link">strona pierwsza</a>
+              </li>
+              <li class="sub-menu-item">
+                <a href="#" class="sub-menu-link">strona druga</a>
+              </li>
+              <li class="sub-menu-item">
+                <a href="#" class="sub-menu-link">strona trzecia</a>
+              </li>
+            </ul>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="#about" class="menu-link">O firmie</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="#projects" class="menu-link">Realizacje</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="#" class="menu-link">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header>
+      <div class="hero-wrapper">
+        <div class="slide">
+          <div class="hero-text-wrapper">
+            <h1 class="hero-header">
+              Nowoczesna aranżacja <span class="break-line"><br /></span>Twojego
+              ogrodu
+            </h1>
+            <p class="hero-text">
+              Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
+              realizacji. Oferujemy kompleksowy zakres usług z indywidualnym
+              podejściem do każdego projektu.
+            </p>
+            <div class="hero-call-to-action-wrapper">
+              <a href="#" class="cta cta-green">Skontaktuj się z nami</a>
+              <a href="#projects" class="cta cta-transparent"
+                >Zobacz nasze realizacje
+                <span class="material-symbols-outlined arrow-down">
+                  arrow_downward
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="hero-img-wrapper"></div>
+        </div>
+        <div class="slide slide-hidden">
+          <div class="hero-text-wrapper">
+            <h1 class="hero-header">Drugi nagłówek</h1>
+            <p class="hero-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+              incidunt nostrum laboriosam.
+            </p>
+            <div class="hero-call-to-action-wrapper">
+              <a href="#" class="cta cta-green">Skontaktuj się z nami</a>
+              <a href="#" class="cta cta-transparent"
+                >Zobacz nasze realizacje
+                <span class="material-symbols-outlined arrow-down">
+                  arrow_downward
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="hero-img-wrapper"></div>
+        </div>
+        <div class="slide slide-hidden">
+          <div class="hero-text-wrapper">
+            <h1 class="hero-header">Trzeci nagłówek</h1>
+            <p class="hero-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              itaque exercitationem cupiditate et aliquam est nihil ut rerum,
+              reprehenderit qui dicta voluptates!
+            </p>
+            <div class="hero-call-to-action-wrapper">
+              <a href="#" class="cta cta-green">Skontaktuj się z nami</a>
+              <a href="#" class="cta cta-transparent"
+                >Zobacz nasze realizacje
+                <span class="material-symbols-outlined arrow-down">
+                  arrow_downward
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="hero-img-wrapper"></div>
+        </div>
+        <div class="hero-buttons">
+          <button class="btn btn-prev">
+            <span class="material-symbols-outlined"> arrow_left_alt </span>
+          </button>
+          <button class="btn btn-next">
+            <span class="material-symbols-outlined"> arrow_right_alt </span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="offer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="offer-wrapper">
+                <h6 class="subheader wow fadeInUp" data-wow-duration=".3s">Oferta</h6>
+                <h2 class="offer-header wow fadeInUp" data-wow-duration=".3s">
+                  Działamy <span class="header-span">kompleksowo</span>
+                </h2>
+                <p class="offer-text wow fadeInUp" data-wow-duration=".3s">
+                  Oferujemy kompletną obsługę inwestycji terenów zielonych.
+                  Projektujemy nowoczesne ogrody przydomowe oraz
+                  rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy
+                  go i wcielimy w życie, a na każdym etapie posłużymy radą i
+                  wieloletnim doświadczeniem.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row offer-items-row">
+            <div class="col-sm-12 col-lg-4 df">
+              <div class="offer-item-wrapper wow fadeInUp" data-wow-duration=".5s">
+                <div class="offer-item-icon-wrapper">
+                  <img
+                    src="template/img/icon1.png"
+                    alt=""
+                    class="img-fluid offer-item-image offer-item-image-1"
+                  />
+                </div>
+                <div class="offer-item-text-wrapper">
+                  <h3 class="offer-item-header">Projekty</h3>
+                  <p class="offer-item-text">
+                    Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym
+                    wykorzystaniem istniejącej przestrzeni.
+                  </p>
+                </div>
+                <div class="offer-item-button-wrapper">
+                  <a href="#" class="offer-item-button"
+                    >Dowiedz się więcej
+                    <span class="material-symbols-outlined">
+                      arrow_right_alt
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-4 df">
+              <div class="offer-item-wrapper wow fadeInUp" data-wow-duration=".5s">
+                <div class="offer-item-icon-wrapper">
+                  <img
+                    src="template/img/icon2.png"
+                    alt=""
+                    class="img-fluid offer-item-image offer-item-image-2"
+                  />
+                </div>
+                <div class="offer-item-text-wrapper">
+                  <h3 class="offer-item-header">Wizualizacje</h3>
+                  <p class="offer-item-text">
+                    Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego
+                    spaceru animowanego w technologii 3D.
+                  </p>
+                </div>
+                <div class="offer-item-button-wrapper">
+                  <a href="#" class="offer-item-button"
+                    >Dowiedz się więcej
+                    <span class="material-symbols-outlined">
+                      arrow_right_alt
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-4 df">
+              <div class="offer-item-wrapper wow fadeInUp" data-wow-duration=".5s">
+                <div class="offer-item-icon-wrapper">
+                  <img
+                    src="template/img/icon3.png"
+                    alt=""
+                    class="img-fluid offer-item-image offer-item-image-3"
+                  />
+                </div>
+                <div class="offer-item-text-wrapper">
+                  <h3 class="offer-item-header">Realizacje</h3>
+                  <p class="offer-item-text">
+                    Zrealizujemy Twoje marzenie przy użyciu najnowszych
+                    rozwiązań i zaawansowanych technologii.
+                  </p>
+                </div>
+                <div class="offer-item-button-wrapper">
+                  <a href="#" class="offer-item-button"
+                    >Dowiedz się więcej
+                    <span class="material-symbols-outlined">
+                      arrow_right_alt
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-us" id="about">
+        <div class="container-fluid">
+          <div class="row about-us-row-reverse">
+            <div class="col-sm-12 col-lg-6">
+              <div class="about-us-wrapper">
+                <h6 class="subheader wow fadeInUp" data-wow-duration=".3s">O firmie</h6>
+                <h2 class="about-us-header wow fadeInUp" data-wow-duration=".3s">
+                  Tworzymy<br />
+                  <span class="header-span">z pasją</span>
+                </h2>
+                <p class="about-us-text wow fadeInUp" data-wow-duration=".3s">
+                  Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą
+                  wykwalifikowani projektanci oraz architekci, których zadaniem
+                  jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza
+                  specjalizacja to przestrzenie nowoczesne, które charakteryzuje
+                  minimalizm, geometria i elegancka prostota. Tworzymy ogrody
+                  małoobsługowe, dostosowane do współczesnego trybu życia.
+                </p>
+                <a href="#" class="about-us-button btn wow fadeInUp" data-wow-duration=".3s"
+                  >Poznaj nas bliżej
+                  <span class="material-symbols-outlined">
+                    arrow_right_alt
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="about-us-image-wrapper"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="projects-wrapper">
+                <h6 class="subheader wow fadeInUp" data-wow-duration=".3s">Realizacje</h6>
+                <h2 class="projects-header wow fadeInUp" data-wow-duration=".3s">
+                  Nasze <span class="header-span">projekty</span>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="grid-overlay"></div>
+          <div class="grid-item wow fadeIn" data-wow-duration=".3s">
+            <a href="template/img/projects1.jpg" data-lightbox="projects"
+              ><img
+                src="template/img/projects1.jpg"
+                alt="projekt 1"
+                class="img-fluid img-vertical grid-img"
+            /></a>
+          </div>
+          <div class="gutter-sizer"></div>
+          <div class="grid-item  wow fadeIn" data-wow-duration=".3s">
+            <a href="template/img/projects2.jpg" data-lightbox="projects"
+              ><img
+                src="template/img/projects2.jpg"
+                alt="projekt 2"
+                class="img-fluid img-horizontal grid-img"
+            /></a>
+          </div>
+          <div class="gutter-sizer"></div>
+          <div class="grid-item  wow fadeIn" data-wow-duration=".3s">
+            <a href="template/img/projects3.jpg" data-lightbox="projects"
+              ><img
+                src="template/img/projects3.jpg"
+                alt="projekt 3"
+                class="img-fluid img-rect grid-img"
+            /></a>
+          </div>
+          <div class="gutter-sizer"></div>
+          <div class="grid-item  wow fadeIn" data-wow-duration=".3s">
+            <a href="template/img/projects4.jpg" data-lightbox="projects"
+              ><img
+                src="template/img/projects4.jpg"
+                alt="projekt 4"
+                class="img-fluid img-rect grid-img"
+            /></a>
+          </div>
+          <div class="gutter-sizer"></div>
+          <div class="grid-item  wow fadeIn" data-wow-duration=".3s">
+            <a href="template/img/projects6.jpg" data-lightbox="projects"
+              ><img
+                src="template/img/projects6.jpg"
+                alt="projekt 6"
+                class="img-fluid img-vertical grid-img"
+            /></a>
+          </div>
+          <div class="gutter-sizer"></div>
+          <div class="grid-item  wow fadeIn" data-wow-duration=".3s">
+            <a href="template/img/projects5.jpg" data-lightbox="projects"
+              ><img
+                src="template/img/projects5.jpg"
+                alt="projekt 5"
+                class="img-fluid img-rect grid-img"
+            /></a>
+          </div>
+          <div class="gutter-sizer"></div>
+          <div class="grid-item  wow fadeIn" data-wow-duration=".3s">
+            <a href="template/img/projects8.jpg" data-lightbox="projects"
+              ><img
+                src="template/img/projects8.jpg"
+                alt="projekt 8"
+                class="img-fluid img-vertical grid-img"
+            /></a>
+          </div>
+          <div class="gutter-sizer"></div>
+          <div class="grid-item  wow fadeIn" data-wow-duration=".3s">
+            <a href="template/img/projects7.jpg" data-lightbox="projects"
+              ><img
+                src="template/img/projects7.jpg"
+                alt="projekt 7"
+                class="img-fluid img-horizontal grid-img"
+            /></a>
+          </div>
+          <div class="gutter-sizer"></div>
+          <div class="grid-item  wow fadeIn" data-wow-duration=".3s">
+            <a href="template/img/projects9.jpg" data-lightbox="projects"
+              ><img
+                src="template/img/projects9.jpg"
+                alt="projekt 9"
+                class="img-fluid img-horizontal grid-img"
+            /></a>
+          </div>
+          <div class="gutter-sizer"></div>
+          <div class="grid-item hidden wow fadeIn" data-wow-duration=".3s">
+            <a href="template/img/projects1.jpg" data-lightbox="projects"
+              ><img
+                src="template/img/projects1.jpg"
+                alt="projekt 1"
+                class="img-vertical img-fluid grid-img"
+            /></a>
+          </div>
+          <div class="gutter-sizer"></div>
+          <div class="grid-item hidden wow fadeIn" data-wow-duration=".3s">
+            <a href="template/img/projects2.jpg" data-lightbox="projects"
+              ><img
+                src="template/img/projects2.jpg"
+                alt="projekt 2"
+                class="img-horizontal img-fluid grid-img"
+            /></a>
+          </div>
+          <div class="grid-item hidden wow fadeIn" data-wow-duration=".3s">
+            <a href="template/img/projects3.jpg" data-lightbox="projects"
+              ><img
+                src="template/img/projects3.jpg"
+                alt="projekt 3"
+                class="img-rect img-fluid grid-img"
+            /></a>
+          </div>
+          <div class="gutter-sizer"></div>
+          <div class="grid-item hidden  wow fadeIn" data-wow-duration=".3s">
+            <a href="template/img/projects4.jpg" data-lightbox="projects"
+              ><img
+                src="template/img/projects4.jpg"
+                alt="projekt 4"
+                class="img-fluid img-rect grid-img"
+            /></a>
+          </div>
+          <div class="gutter-sizer"></div>
+          <div class="grid-item hidden  wow fadeIn" data-wow-duration=".3s">
+            <a href="template/img/projects6.jpg" data-lightbox="projects"
+              ><img
+                src="template/img/projects6.jpg"
+                alt="projekt 6"
+                class="img-fluid img-vertical grid-img"
+            /></a>
+          </div>
+          <div class="gutter-sizer"></div>
+          <div class="grid-item hidden  wow fadeIn" data-wow-duration=".3s">
+            <a href="template/img/projects5.jpg" data-lightbox="projects"
+              ><img
+                src="template/img/projects5.jpg"
+                alt="projekt 5"
+                class="img-fluid img-rect grid-img"
+            /></a>
+          </div>
+        </div>
+        <div class="projects-button btn">
+          Rozwiń
+          <span class="material-symbols-outlined arrow-down">
+            arrow_downward
+          </span>
+        </div>
+      </section>
+      <section class="insta">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="insta-wrapper">
+                <h3 class="insta-header wow fadeInUp" data-wow-duration=".3s">
+                  Zostańmy w kontakcie!<br />Znajdziesz nas na
+                  <span class="header-span">Instagramie</span>.
+                </h3>
+                <div class="insta-cta-wrapper">
+                  <p class="insta-cta-text  wow fadeInUp" data-wow-duration=".3s">
+                    Śledź nasze <span class="break-line"><br /></span> najnowsze
+                    realizacje!
+                  </p>
+                  <a href="#" class="insta-cta-button btn  wow fadeInUp" data-wow-duration=".3s">Instagram</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="footer-wrapper">
+              <div class="footer-header-wrapper">
+                <div class="footer-logo-wrapper">
+                  <img
+                    src="template/img/giarddesign-logo2.svg"
+                    alt=""
+                    class="img-fluid wow fadeInUp" data-wow-duration=".3s"
+                  />
+                </div>
+                <div class="footer-header-text-wrapper">
+                  <p class="footer-header-text wow fadeInUp" data-wow-duration=".3s">
+                    Daj znać, co możemy dla Ciebie zrobić!
+                  </p>
+                  <a href="#" class="footer-header-button btn wow fadeInUp"
+                    >Skontaktuj się z nami</a
+                  >
+                </div>
+              </div>
+              <div class="footer-divider"></div>
+              <div class="footer-info-wrapper">
+                <div class="footer-links-wrapper">
+                  <ul class="footer-links">
+                    <li class="footer-link-item">
+                      <a href="#" class="footer-link wow fadeInUp" data-wow-duration=".3s">Kontakt</a>
+                    </li>
+                    <li class="footer-link-item">
+                      <a href="#" class="footer-link wow fadeInUp" data-wow-duration=".3s">Instagram</a>
+                    </li>
+                    <li class="footer-link-item">
+                      <a href="#" class="footer-link wow fadeInUp" data-wow-duration=".3s">Facebook</a>
+                    </li>
+                    <li class="footer-link-item">
+                      <a href="#" class="footer-link wow fadeInUp" data-wow-duration=".3s">Linkedin</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-contact-wrapper">
+                  <ul class="footer-contact-links">
+                    <li class="footer-link-item">
+                      <a href="#" class="footer-link wow fadeInUp" data-wow-duration=".3s">000-000-000</a>
+                    </li>
+                    <li class="footer-link-item">
+                      <a href="#" class="footer-link wow fadeInUp" data-wow-duration=".3s">giarddesign@kontakt.pl</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-copyright-wrapper">
+                <p class="footer-copyright-text wow fadeInUp" data-wow-duration=".3s">Prawa zastrzeżone © 2022</p>
+                <div class="footer-author-info">
+                  <p class="footer-author-info-text wow fadeInUp" data-wow-duration=".3s">made by</p>
+                  <a href="#" target="_blank" rel="nofollow"
+                    ><img
+                      src="template/img/adrespect-logo.svg"
+                      alt="adrespect logo"
+                      class="img-fluid wow fadeInUp" data-wow-duration=".3s"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="template/js/jquery-3.2.1.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="template/js/lightbox.min.js"></script>
+    <script src="template/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
